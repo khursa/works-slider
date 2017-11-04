@@ -1,0 +1,183 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'poppinsextrabold';
+    src: url('../fonts/poppins-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* GENERAL STYLES */
+
+.ws-section {
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+section {
+    max-width: 1170px;
+}
+
+/* HEADER */
+
+.ws-header {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 1170px;
+}
+
+.ws-header__subtitle {
+    margin: 65px auto 32px;
+    font-family: 'poppinsextrabold', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+}
+
+.ws-header__subtitle:after {
+    content: '';
+    position: absolute;
+    background: url(../img/element-1.png);
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    left: 78.709%;
+    transform: translateX(-50%);
+    transform: translateY(-100%);
+}
+
+.ws-header__title {
+    margin: 0 auto;
+    font-family: 'poppinsregular', sans-serif;
+    font-size: 86px;
+    line-height: 90px;
+}
+
+.ws-header__title:before {
+    content: '';
+    position: absolute;
+    background: url(../img/element-2.png);
+    width: 44px;
+    height: 44px;
+    top: 185px;
+    left: 20px;
+}
+
+
+/* SLIDER */
+
+.ws-slider {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 105px;
+    max-width: 90%;
+	margin-bottom: 100px;
+    }
+
+.ws-slider__item {
+    display: block;
+    outline: none;
+    position: relative;
+    margin: 0 20px; 
+    }
+
+.ws-content-img img {
+    height: auto;
+    width: auto;
+    zoom: 0.55;
+    }
+
+.ws-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    background-color: rgba(27, 241, 173, 0.8); 
+    min-width: 108%;
+    }
+
+.ws-overlay__title {
+     font-family: 'poppinsregular';
+     color: #ffffff;
+     font-size: 18px;
+     font-weight: 400;
+     width: 300px;
+     text-transform: uppercase;
+     line-height: 24px;
+     text-align: justify;
+     line-height: 28px;
+     padding: 60% 0 0 30px;
+     word-spacing: 1.8;
+     margin: 0; 
+     }
+
+.ws-overlay__author {
+      font-family: 'poppinsregular';
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 400;
+      padding: 0 0 0 30px;
+      text-align: left; 
+      }
+
+.ws-slider__item:hover .ws-overlay {
+       opacity: 1; 
+       }
+
+.slick-prev, 
+.slick-next {
+     width: 96px;
+     height: 96px;
+     position: absolute;
+     -webkit-transition: all linear .3s;
+     -moz-transition: all linear .3s;
+     -ms-transition: all linear .3s;
+     -o-transition: all linear .3s;
+     transition: all linear .3s; 
+        }
+
+.slick-prev:before, .slick-next:before {
+    display: none; 
+    }
+
+.slick-prev {
+    background: url("../img/arrow-left.png");
+    left: -85px; 
+    }
+
+.slick-prev:hover {
+    background: url("../img/arrow-left.png");
+   		 }
+
+.slick-next {
+    background: url("../img/arrow-right.png");
+    right: -45px;
+    }
+
+.slick-next:hover {
+    background: url("../img/arrow-right.png");
+    	}
